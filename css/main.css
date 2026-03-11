@@ -7,11 +7,20 @@ body{
 header {
     display: flex;
     margin-top: 25px;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
+    background-image: url("../assets/img/homeHeader.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    height: 112vh;
+    margin-top: 0;
+    padding-top: 25px;
+    
 }
+
+
 .navbar {
     height: 80px;
     width: 1275px;
@@ -36,6 +45,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 25px;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -47,24 +57,20 @@ header {
 
 }
 
+.navlinks :hover{
+    color: #15d5f5;
+    cursor: pointer;
+}
+
 .hero{
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    text-align: center;
     
-    background-image: url("../assets/img/homeHeader.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    height: 100vh;
-    margin: 0;
 }
 
 .hero h1{
     margin: 0;
-
     font-family: "Mythology Of Egypt";
     font-size: 96px;
     color: #e9ad1c;
