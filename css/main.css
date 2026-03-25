@@ -239,12 +239,12 @@ h3{
     width: 50%;
 }
 
-.adoptCreaturesWhite{
+.White{
     background-color: rgb(255, 255, 255);
     color: black;
 }
 
-.adoptCreaturesWhite h1{
+.White h1{
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -270,3 +270,12 @@ h3{
 footer{
     display: flex;
 }
+
+
+/* usually want container two dives inside */
+
+/* div conatiner two collums bottom of page */
+/* Give the header images IDs */
+/* +- works same as searchbar */
+/* add br tag to break up Title*/
+/* zIndex of navbar 1000 if u want to make it fixed */
