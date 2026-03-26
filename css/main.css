@@ -85,6 +85,10 @@ button{
     border-radius: 10px;
 }
 
+.logo{
+    width: 20%;
+}
+
 button :hover{
     background-color: #e9ad1c;
     color: #002d68;
@@ -341,15 +345,11 @@ color: #4d4d4d;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    background-color: #e9ad1c;
     
 }
 
-.addAmount button{
-padding: 0;
-color: white;
-background-color: #e9ad1c;
-border-radius: 0%;
-}
+
 
 
 
@@ -359,8 +359,9 @@ border-radius: 0%;
     color: #f8f8f8;
     font-size: 16pt;
     text-align: center;
-    /* padding: 10px; doesnt add for whole thing */
+    padding: 10px; 
 }
+
 
 
 
@@ -404,24 +405,43 @@ border-radius: 0%;
     gap: 20px;
 }
 
-.flexCol{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 20px;
-    
-    
-}
-
-.flexRow{
-    margin: 0;
+.dflexRow{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 2em;
     line-height: 1;
-    /* flex-wrap: wrap; */
-    /* text-align: center; */
+
+
+    
+}
+
+.dflexCol{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.flexCol{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    text-align: center; 
+    
+    
+}
+
+.flexRow{
+    width: 25%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    line-height: 1;
 }
 
 .flexRow h6{
@@ -517,10 +537,11 @@ justify-content: center;
 
 .footerNav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items:flex-start ;
+    justify-content: flex-start;
 }
-
+/* padding that shouldnt ul list items */
 
 .footerNav li{
     list-style: none;
@@ -543,7 +564,8 @@ justify-content: center;
 .footerTop{
  display: flex;
  flex-direction: row;
- justify-content: space-evenly;
+ justify-content: space-between;
+ /* width and resize img */
 
 }
 
