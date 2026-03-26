@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family:'Poppins', sans-serif;
-    font-size: 16pt;
+    font-size: 15pt;
     font-weight: 300;
 }
 
@@ -13,33 +13,50 @@ body{
 img{
     border-radius: 20px;
 }
+
+iframe{
+    border-radius: 20px;
+}
  
 
-h1, h2 {
+h1 {
     font-family: 'TitleFont', sans-serif;
-    font-size: 100px;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
-
-h3{
-    font-family: 'Metamorphous', sans-serif; 
-    font-size: 40px;
+    font-size: 96pt;
     font-weight: 400;
     margin: 0;
     padding: 0;
     color: #e9ad1c;
 }
 
+h2{
+    font-family: 'TitleFont', sans-serif;
+    font-size: 76pt;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+
+}
+
+h3{
+    font-family: 'Metamorphous', sans-serif; 
+    font-size: 24pt;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
 h4{
+   
     font-family: 'Metamorphous', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h5{
+    margin: 0;
+    padding: 0;
     font-size: 14pt;
     text-transform: uppercase;
     font-weight: 600;
@@ -47,9 +64,11 @@ h5{
 }
 
 h6{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 
 }
 
@@ -64,11 +83,12 @@ button{
     font-weight: 700;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
 }
 
-button :hover{
-   background-color: #e9ad1c;
+.blueButtons :hover{
+    background-color: #e9ad1c;
+    color: #002d68;
+    cursor: pointer;
 }
 
 .header img{
@@ -187,8 +207,8 @@ button :hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 80px;
+    padding-right: 80px;
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -211,6 +231,15 @@ button :hover{
     justify-content: space-between;
 }
 
+.filterBar input{
+    padding-top: 5px;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    color: #f8f8f8;
+    height: 40px;
+}
+
 .filter{
     display: flex;
     flex-direction: row;
@@ -227,7 +256,7 @@ button :hover{
 .filterRight{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap:0px;
 
 }
 
@@ -262,22 +291,52 @@ button :hover{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 4em;
     color: grey;
     font-size: 24px;
     font-weight: 500;
+    gap: 4em;
 }
+
+.simpleRowFlex button{
+    background-color: #002d68;
+    color: white;
+}
+
+.addCart{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4em;
+    
+}
+
+
 
 .flex2Col{
     width: 50%;
+    margin: 0;
+    gap: 0;
+    padding-left: 50px;
+
 }
 
 .White{
     background-color: rgb(255, 255, 255);
-    color: black;
+    color: grey;
 }
 
+.White h5{
+    color: #15d5f5;
+}
 
+.White h6{
+    color: #002d68;
+}
+
+.blue{
+    background-color: #002d68;
+    color: white;
+}
 
 .fNav{
     display: flex;
@@ -289,11 +348,115 @@ button :hover{
     width: 25%;
 }
 
+.midAlign{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 70px;
+    gap: 20px;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    
+}
+
+.flexRow{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2em;
+    line-height: 1;
+    text-align: center;
+}
+
+.flexRow h6{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.flexRow p {
+    font-size: 14px;
+}
+
 .fSocialMedia img{
  width: 10% ;
  border-radius: 10px;
  cursor: pointer;
+ padding-bottom: 50px;
 }
+
+.contactContainer {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+}
+
+.contactSocials{
+    padding-left: 50px;
+}
+
+.contactInfo, .contactForm{
+    width: 40%;
+    padding: 20px;
+
+}
+
+.contactForm form{
+    padding: 40px;
+    gap: 20px;
+    background-image: url(../assets/img/formBackground.png);
+    background-size: cover;                 
+    background-repeat: no-repeat;   
+    border-radius: 20px ;
+}
+
+.formElement{
+    width: 100%;
+    padding: 10px;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea{
+    width: 95%;
+    padding: 25px 0;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #000000;
+    
+}
+
+.contactForm label{
+    color: white;
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+
+}
+
+.contactSection{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    
+}
+
 
 footer{
     display: flex;
