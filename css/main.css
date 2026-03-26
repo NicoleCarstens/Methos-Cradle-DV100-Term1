@@ -85,6 +85,78 @@ button{
     border-radius: 10px;
 }
 
+button :hover{
+    background-color: #e9ad1c;
+    color: #002d68;
+}
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+
+    padding-top: 30px;
+
+}
+.navbar{
+    z-index: 1000;
+    margin: 0%;
+    height: 80px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px  45px;
+    background-color:rgb(249, 249, 249, 0.7);
+    border-radius: 30px;
+ 
+}
+
+
+.navlinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.navlinks a{
+    font-family: "Poppins";
+    font-size: 18px;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+
+.navlinks :hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+.searchItem{
+    background-color: #ffffff;
+    border: 0;
+}
+
+.search button{
+padding: 0;
+color: #4d4d4d;
+
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 55%;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .blueButtons :hover{
     background-color: #e9ad1c;
     color: #002d68;
@@ -97,11 +169,12 @@ button{
 }
 
 .header{
+    margin: 0;
     background-image: url("../assets/img/homeHeader.png");
     background-repeat: none;
     background-size: cover ;
     height: 100vh;
-    margin-top: 0;
+   
 }
 
 .backgroundImgA{
@@ -131,65 +204,20 @@ button{
 }
 
 
-.headerContainer{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0;
 
-    padding-top: 30px;
 
-}
 
-.navbar{
-    z-index: 1000;
-    margin: 0%;
-    height: 80px;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
-
-    padding: 2px  45px;
-    background-color:rgb(249, 249, 249, 0.7);
-    border-radius: 30px;
-    
-   
-}
-
-.navbar img{
-    width: 20%;
-}
-
-.navlinks{
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    transition: background-color 0.3s ease;
-}
-
-.navlinks a{
-    font-family: "Poppins";
-    font-size: 18px;
-    text-decoration: none;
-    color: #4d4d4d;
-    font-weight: 400;
-}
-
-.navlinks :hover{
-    color: aqua;
-    cursor: pointer;
-}
 
 .headings{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    width: 35%;
+   position: absolute;
+   bottom: 120px;
+   right: 10px;
+  
     
 }
+
+
 
 .heading{
     z-index: 1000;
@@ -232,12 +260,13 @@ button{
 }
 
 .filterBar input{
-    padding-top: 5px;
     border: none;
     border-radius: 15px;
     font-family: 'Poppins';
-    color: #f8f8f8;
+    background-color: rgba(255, 255, 255, 0.6);
     height: 40px;
+    font-size: 14pt;
+    padding-left: 20px;
 }
 
 .filter{
@@ -256,7 +285,7 @@ button{
 .filterRight{
     display: flex;
     flex-direction: row;
-    gap:0px;
+    gap:1em;
 
 }
 
@@ -297,17 +326,40 @@ button{
     gap: 4em;
 }
 
-.simpleRowFlex button{
-    background-color: #002d68;
-    color: white;
-}
+
 
 .addCart{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 4em;
+    align-items: center;
+    gap: 1em;
+}
+
+.addAmount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
     
+}
+
+.addAmount button{
+padding: 0;
+color: white;
+background-color: #e9ad1c;
+border-radius: 0%;
+}
+
+
+
+.inputItem{
+    background-color: #e9ad1c;
+    border: 0;
+    color: #f8f8f8;
+    font-size: 16pt;
+    text-align: center;
+    /* padding: 10px; doesnt add for whole thing */
 }
 
 
@@ -344,10 +396,6 @@ button{
     align-items: flex-start;
 }
 
-.fNav img{
-    width: 25%;
-}
-
 .midAlign{
     display: flex;
     flex-direction: column; 
@@ -361,8 +409,7 @@ button{
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
-    text-align: center;
-    /* flex-wrap: wrap; */
+    
     
 }
 
@@ -373,7 +420,8 @@ button{
     align-items: flex-start;
     gap: 2em;
     line-height: 1;
-    text-align: center;
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
 }
 
 .flexRow h6{
@@ -457,16 +505,66 @@ justify-content: center;
     
 }
 
+.footerBrand{
+    font-size: 12pt;
+    color: #4d4d4d;
 
-footer{
+}
+
+.footerBrand img{
+    width: 25%;
+}
+
+.footerNav{
     display: flex;
+    flex-direction: row;
+    align-items:flex-start ;
 }
 
 
-/* usually want container two dives inside */
+.footerNav li{
+    list-style: none;
+}
 
-/* div conatiner two collums bottom of page */
-/* Give the header images IDs */
-/* +- works same as searchbar */
-/* add br tag to break up Title*/
-/* zIndex of navbar 1000 if u want to make it fixed */
+.footerNav a{
+    font-family: "Poppins";
+    font-size: 18px;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+.footerLinks img{
+    width: 10%;
+    border-radius: 10px;
+}
+
+
+.footerTop{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+
+}
+
+.footerTop h5{
+    color: #000000;
+    text-transform: none;
+}
+
+.footerBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #4d4d4d;
+    font-weight: 400;
+}
+
+hr{
+    background-color: #c5c5c5; 
+    /* idk how to change the color */
+}
+
+footer{
+    padding: 80px;
+}
